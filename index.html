@@ -4,130 +4,90 @@
         <meta charset="UTF-8">
         <title>GDG Automation</title>
          <link rel="stylesheet" type="text/css" href="estilos.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
           <script src="https://kit.fontawesome.com/2b5f84cd79.js" crossorigin="anonymous"></script>
-           <script type="text/javascript" src="script.js"></script>
+                
             <link rel="icon" href="img/logo2_gdg.jpg">
-           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-	   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        
     </head>
 <body>
-    <!-----------------------------------------------Navegador---------------------------------------------------->
-          <header>
-            <nav class="navegacion">
-             <ul class="menu">
-                <li><a href="#"><i class="bi bi-house-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;About us</a></li>
-                <li><a href="#"><i class="bi bi-bar-chart-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp;Bussines Model</a>
-             <ul class="submenu">
-                  <li><a href="#"><i class="bi bi-wrench-adjustable"></i>&nbsp;&nbsp;&nbsp;Machine</a></li>
-                  <li><a href="#"><i class="bi bi-dpad-fill"></i>&nbsp;&nbsp;&nbsp;quality</a></li>
-                  <li><a href="#"><i class="bi bi-lightbulb-fill"></i>&nbsp;&nbsp;rendering</a></li></ul>
-              </li>
-                <li><a href="#"><i class="bi bi-diagram-3-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp;Design</a></li>
-                <li><a href="#"><i class="bi bi-hand-thumbs-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;Expertise</a></li>
-                <li><a href="#"><i class="bi bi-telephone-forward-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact</a>
-            </li>
-            </ul>
-</nav>
-            </header>
-<!-----------------------------------------------Carrusel de imagenes---------------------------------------------->
-            <div class="carrousel">
-                <div class="conteCarrousel">
-                    <div class="itemCarrousel" id="itemCarrousel-1">
-                        <div class="itemCarrouselTarjeta">
-                            <img src="./img/gdg-logo.png" alt="item-1-Carrousel">
-                        </div>
-                        <div class="itemCarrouselArrows">
-                            <a href="#itemCarrousel-3">
-                                <i class="fas fa-chevron-left"></i>
-                            </a>
-                            <a href="#itemCarrousel-2">
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="itemCarrousel" id="itemCarrousel-2">
-                        <div class="itemCarrouselTarjeta">
-                            <img src="./img/logo2_gdg.jpg" alt="item-2-Carrousel">
-                        </div>
-                        <div class="itemCarrouselArrows">
-                            <a href="#itemCarrousel-1">
-                                <i class="fas fa-chevron-left"></i>
-                            </a>
-                            <a href="#itemCarrousel-3">
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="itemCarrousel" id="itemCarrousel-3">
-                        <div class="itemCarrouselTarjeta">
-                            <img src="./img/image_home.png" alt="item-3-Carrousel"
-                            
-                            >
-                        </div>
+        <header>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a class="active" href="#home"><i class="bi bi-house-fill"></i>&nbsp;&nbsp;&nbsp;Home</a></li>
+                    <li><a href="#about us"><i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;About us</a></li>
+                    <li><a href="#bussines Model"><i class="bi bi-bar-chart-fill"></i>&nbsp;&nbsp;&nbsp;Bussines Model</a>
+                        <ul class="submenu">
+                            <li><a href="#machine"><i class="bi bi-wrench-adjustable"></i>&nbsp;&nbsp;Machine</a></li>
+                            <li><a href="#quality"><i class="bi bi-dpad-fill"></i>&nbsp;&nbsp;Quality</a></li>
+                            <li><a href="#rendering"><i class="bi bi-lightbulb-fill"></i>&nbsp;&nbsp;rendering</a></li></ul>
+                        </li>
+                          <li><a href="#design"><i class="bi bi-diagram-3-fill"></i>&nbsp;&nbsp;&nbsp;Design</a></li>
+                          <li><a href="#expertise"><i class="bi bi-hand-thumbs-up"></i>&nbsp;&nbsp;&nbsp;Expertise</a></li>
+                          <li><a href="#contact"><i class="bi bi-telephone-forward-fill"></i>&nbsp;&nbsp;&nbsp;Contact</a>
+        </ul>
+        </nav>
+        <div class="icons"> </div>
+        <i class="fas fa-bars" id="bars"></i>
+        <i class="fas fa-search" id="search"></i>
+    
+        </header>
+<!--------------------------------------------Home-->  
+<section class="home" id="home">
+    <div class="home-slider">
+        <div class="wrappper">
+            <div class="slide">
+                <div class="content">
+                    <span>our special</span>
+                    <h3>Hola a todos</h3>
+                    <p>Lorem</p>
+                    <a href="#" class="btn"></a>
+                </div>
+                <div class="image">
+                    <img src="./img/gdg-logo.png" alt="">
+                
 
-                        <div class="itemCarrouselArrows">
-                            <a href="#itemCarrousel-2">
-                                <i class="fas fa-chevron-left"></i>
-                            </a>
-                            <a href="#itemCarrousel-1">
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                <div class="conteCarrouselController">
-                    <a href="#itemCarrousel-1">•</a>
-                    <a href="#itemCarrousel-2">•</a>
-                    <a href="#itemCarrousel-3">•</a>
-                </div>
+
             </div>
-            <p style="background-color: rgb(11, 112, 78);">
-                "Creating solutions that meet our customers requirements"
-            </p>
-                    </div>
-<!-- <div>
-    <div class="hero">
-        <h1 class="texto">Super cool</h1>
-      </div>
-    </div> -->
-    <section>
-               <div class="bulb">
-                    <i id="light" class="fas fa-lightbulb"></i>
-                          </div>
-                                  <div>
-                             <div class="switch">
-                            <input type="checkbox" id="check">
-                           <label for="check"></label>
-                          </div>
-                   </div>
-    </section>
-   </body>
-<!-------------------------------------------------información---------------------------------------------------->
-    <footer class="footer container">
-        <div class="footer-content">
-          <div class="footer-form">
-              <h2>Contact us</h2>
-              <form>
-                  <i class="bi bi-person-fill"></i>&nbsp;&nbsp;<input class="campo" type="text" placeholder="Name">
-                  <i class="bi bi-envelope-at"></i>&nbsp;&nbsp;<input class="campo" type="email" placeholder="Email">
-                  <br>
-                  <br>
-                 <textarea class="campo" cols="30" rows="10"></textarea>
-                  <!-- <input class="btn-2" type="submit" value="submit"> -->
-                  <br>
-                  <button type="btn button" class="btn btn-primary" type="submit" value="submit">Submit</button>
-              </form>
-          </div>
-   <div class="footer-txt">
-          <h3 style="align-items: center;">location<br>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.674461896962!2d-99.70612368509605!3d19.253014286986627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd888da88e8c39%3A0x45cbf04f1a0df259!2sGDG%20Automation!5e0!3m2!1ses-419!2smx!4v1683905982037!5m2!1ses-419!2smx" width="400" height="250" style="border: 1px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </h3>
-         </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>our special</span>
+                    <h3>Hola a todos</h3>
+                    <p>Lorem</p>
+                    <a href="#" class="btn"></a>
+                </div>
+                <div class="image">
+                    <img src="./img/image_home.png" alt="">
+                    
+                </div>
+
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>our special</span>
+                    <h3>Hola a todos</h3>
+                    <p>Lorem</p>
+                    <a href="#" class="btn"></a>
+                </div>
+                <div class="image">
+                    <img src="./img/logo2_gdg.jpg" alt="">
+                   
+                </div>
+
+            </div>
         </div>
-        <button style="color: red;"onclick="location.href='https://www.youtube.com/channel/UCwC1upDYn4hQTMAS2WEpZ-Q'"><i class="fa-brands fa-youtube fa-bounce fa-2xl" style="color: #ff0000;"></i></button>
-         </footer>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-                </html>
+    </div>
+
+</section>
+           
+       
+</body>
+
+    
+</html>
