@@ -2,6 +2,8 @@
 	--green: #628025;
 	--black:#192a56;
 	--light-color:#666;
+	--light-azul: #3578A6;
+	
 	--box-shadow:0 .5rem 1.5rem rgba(0,0,0.1);
 }
 
@@ -13,29 +15,34 @@
 	outline: none; border:none;
 	text-transform: capitalize;
 	transition:all .2s linear;
-	color: white;
+	color: #e8e8e8;
 	}
 section{
 	padding: 2rem 9%;
 
 }
 section:nth-child(even){
-	background: #eee;
+	background: #e8e8e8;
 }
 html{
 	font-size: 100%;
 	overflow-x: hidden;
 	scroll-padding-top: 5.5rem;
 	scroll-behavior: smooth;
-	background: #fff;
+	background: #e8e8e8;
 
+}
+@media(max-width:768px){
+	header .icons #menu-bars{
+		display: inline-block;
+	}
 }
 header{
 	position: fixed;
 	top:0; left: 0; right: 0;
 	width: 1000px ;
 	margin: 40px auto;
-	background: #075AA9;
+	background: #2e4186;
 	padding: 1rem 7%;
 	display: flex;
 	align-items: center;
@@ -50,12 +57,12 @@ header{
 .menu > li > a{
 	display: block;
 	padding: 15px 20px;
-	color: #fff;
+	color: #e8e8e8;
 	font-family: 'Open sans';
 	text-decoration: none;
 }
 .menu li a:hover{
-	color: #fff ;
+	color: #e8e8e8 ;
 	transition: all .3s;
 }
 /* Submenu*/
@@ -80,9 +87,16 @@ header{
 }
 header.navbar{
 	position: absolute;
-	top:0; left: 0; right: 0;
-	background: #fff;
+	top: 10px; left: 0; right: 0;
+	background: #e8e8e8;
 	border-top: .1rem solid rgba(0,0,0.1);
+	border-bottom: .1rem solid rgba(0,0,0,0.2);
+	padding: 1rem;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+header .navbar .active{
+	clip-path: (0 0, 100% 0, 100% 100%, 0% 100%);
 }
 header navbar a{
 	font-size: 1.7rem;
@@ -92,48 +106,43 @@ header navbar a{
 }
 header .navbar a.active,
 header .navbar a:hover{
-	color: #fff;
-	background: var(--green);
+	color: #000;
+	background: var(--light-azul);
 }
 
 header .icons i,
 header .icons a{
 	cursor: pointer;
 	margin-left: .5rem;
-	line-height: 4.5rem;
-	width: 4.5;
+	line-height: 1.6rem;
+	width: 3.5;
 	text-align: center;
 	font-size: 1.7rem;
-	color: var(--black);
-	border-radius: 50%;
-	background:#192a56;
-
-}
+	border-radius: 40%;
+	
+	}
 header .icons i:hover,
 header .icons a:hover{
-	color:#075AA9;
-	background: var(--green);
+	
 	transform: rotate(360deg);
 }
 .home .home-slider .slide{
 display: flex;
 align-items: center;
 flex-wrap: wrap;
-gap: 2rem;
-padding-top: 9rem;
-color: var(--black);
+gap: 3rem;
+padding-top: 5rem;
+
 
 }
 .home .home-slider .slide .content{
 	flex:1 1 45rem;
-
 }
 .home .home-slider .slide .image{
-	flex:1 1 45rem;
-	
-}
+	flex: 1 1 45rem;
+	}
 .home .home-slider .slide .image img{
-width: 50%;
+width: 100%;
 }
 .home .home-slider .slide .content span{
 	color:var(--green);
@@ -146,9 +155,69 @@ width: 50%;
 .home .home-slider .slide .content p{
 	color:var(--light-color);
 	font-size: 2.2rem;
-	padding: 5rem 0;
+	padding: 5rem ;
 	
 }
+/*BOMBILLA*/
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body {
+	background:#212121;
+	min-height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.bulb {
+	margin-bottom:50px;
+}
+.bulb i {
+	color:#fff;
+	font-size:150px;
+	transition:all 0.3s;
+}
+.bulb i.on {
+	color:#fddb09;
+	text-shadow: 0 0 100px #ffe500;
+}
+
+/*Switch*/
+.switch > input {
+	display:none;
+}
+.switch > label {
+	margin:auto;
+	display:block;
+	position:relative;
+	background:#d2d9e4;
+	width:112px;
+	height:56px;
+	border-radius: 30px;
+	border: 2px solid #cad3dc;
+	cursor: pointer;
+}
+.switch > label:before {
+	content:"";
+	position:absolute;
+	width:52px;
+	height:52px;
+	background:#fff;
+	border-radius: 50%;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	left:0;
+	top:0;
+	transition:all 0.3s;
+}
+.switch > input:checked + label {
+	background: #20a0ff;
+}
+.switch > input:checked + label:before {
+	left:56px;
+} 
+
 
 
 
