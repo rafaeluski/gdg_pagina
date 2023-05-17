@@ -3,7 +3,6 @@
 	--black:#192a56;
 	--light-color:#666;
 	--light-azul: #3578A6;
-	
 	--box-shadow:0 .5rem 1.5rem rgba(0,0,0.1);
 }
 
@@ -24,17 +23,33 @@ section{
 section:nth-child(even){
 	background: #e8e8e8;
 }
-html{
-	font-size: 100%;
-	overflow-x: hidden;
-	scroll-padding-top: 5.5rem;
-	scroll-behavior: smooth;
-	background: #e8e8e8;
+
+
+.btn{
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 1.7rem;
+	color:#fff;
+	background: var(--black);
+	border-radius: .5rem;
+	cursor: pointer;
+	padding: .8rem 3rem;
 
 }
+
+.btn:hover{
+	background: var(--green);
+	letter-spacing: .1rem;
+}
 @media(max-width:768px){
-	header .icons #menu-bars{
-		display: inline-block;
+	
+	html{
+		font-size: 50%;
+		overflow-x: hidden;
+		scroll-padding-top: 5.5rem;
+		scroll-behavior: smooth;
+		background: #e8e8e8;
+	
 	}
 }
 header{
@@ -120,7 +135,10 @@ header .icons a{
 	font-size: 1.7rem;
 	border-radius: 40%;
 	
-	}
+}
+header .icons #menu-bars{
+	display: inline-block;
+}
 header .icons i:hover,
 header .icons a:hover{
 	
@@ -132,8 +150,6 @@ align-items: center;
 flex-wrap: wrap;
 gap: 3rem;
 padding-top: 5rem;
-
-
 }
 .home .home-slider .slide .content{
 	flex:1 1 45rem;
@@ -159,7 +175,7 @@ width: 100%;
 	
 }
 /*BOMBILLA*/
-* {
+/* * {
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -185,7 +201,7 @@ body {
 }
 
 /*Switch*/
-.switch > input {
+/* .switch > input {
 	display:none;
 }
 .switch > label {
@@ -210,14 +226,16 @@ body {
 	left:0;
 	top:0;
 	transition:all 0.3s;
-}
+} */
 .switch > input:checked + label {
 	background: #20a0ff;
 }
 .switch > input:checked + label:before {
 	left:56px;
-} 
-
+}  */
+.swiper-pagination-bullet-active{
+	background: var(--green);
+}
 
 
 
