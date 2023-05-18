@@ -1,33 +1,25 @@
-let menu = document.jquerySelector('#menu-bars');
-let navbar = document.jquerySelector('.navbar');
-
-menu.onclick = () =>{
-	menu.classList.toogle('fa-times');
-	menu.classList.toogle('active');
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+    
 }
-window.onscroll = () =>{
-	menu.classList.remove('fa-times');
-	menu.classList.remove('active');
+window.onscroll=()=>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
 }
-document.jquerySelector('#search-icon').onclick = () =>{
-	document.jquerySelector('#search-icon').classList.onclick = ()=>{
-
-	}
-}
-var swiper = new swiper (".homeslider",{
-	spaceBetween: 30,
-	centeredSlides: true,
-	autplay:{
-		delay: 7500,
-		disableOnInteraction: false,
-	},
-	pagination:{
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-	loop: true,
-	
+var swiper = new swiper('.home-slider',{
+    spaceBetween:30,
+    centeredSlides: true,
+    autoplay:{
+        delay:7500,
+        disableOnInteraction: false,
+    },
+    pagination:{
+        el:".swiper-pagination",
+        clickable: true,
+    },
+   loop:true,
+   
 });
-
-
-
